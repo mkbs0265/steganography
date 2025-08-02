@@ -1,6 +1,6 @@
 ---
 
-`markdown
+markdown
 # 🕵‍♂ Image-Based Steganography using OpenCV
 
 This project implements **image-based steganography** using OpenCV in Python. It allows users to **hide secret messages inside an image** and later **retrieve them with a passcode**.

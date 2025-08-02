@@ -1,89 +1,112 @@
-This project implements image-based steganography using OpenCV in Python. It allows users to hide secret messages inside an image and later retrieve them with a passcode.
+---
 
-Features:
+`markdown
+# 🕵‍♂ Image-Based Steganography using OpenCV
 
-1.Encrypt messages inside an image (Steganography)
+This project implements **image-based steganography** using OpenCV in Python. It allows users to **hide secret messages inside an image** and later **retrieve them with a passcode**.
 
-2.Decrypt messages from the encrypted image
+---
 
-3.Uses lossless PNG format to prevent data loss
+## 🔐 Features
 
-4.Requires a passcode for decryption
+- 🔏 Encrypt secret messages into images (Steganography)
+- 🔓 Decrypt hidden messages using a secure passcode
+- 🖼 Uses **lossless PNG** format to prevent data loss
+- 🧩 Simple CLI interface using Python
 
-Prerequisites:
+---
 
-Ensure you have the following installed:
+## 🛠 Prerequisites
 
-Python 3.x
+Make sure you have the following installed:
 
-OpenCV (cv2)
+- Python 3.x
+- OpenCV (`cv2`)
+- `os` module (included in Python standard library)
 
-OS module (built-in in Python)
+### 📦 Install OpenCV
 
-Install OpenCV if not already installed:
-
+bash
 pip install opencv-python
+`
 
-File Structure:
+---
 
-├── encrypt.py      # Encryption Script
-├── decrypt.py      # Decryption Script
-├── photo.jpg/png        # Sample Input Image
-├── encryptedImage.png  # Output Encrypted Image
-├── README.md       # Documentation
+## 📁 File Structure
 
-Usage:
 
-Encryption (Hiding a message in an image):
+├── encrypt.py              # Script for hiding a message in an image
+├── decrypt.py              # Script for retrieving a message from an image
+├── photo.png               # Sample input image
+├── encryptedImage.png      # Output image with embedded message
+├── README.md               # Project documentation
 
-Place your image (preferably .png) in the project directory.
 
-Run encrypt.py:
+---
 
-  python encrypt.py
+## 🚀 Usage
 
-Enter a secret message and a passcode.
+### 🔐 Encryption (Hiding a Message)
 
-The encrypted image will be saved as encryptedImage.jpg/png.
+1. Place your **image file** (preferably `.png`) in the project directory.
+2. Run the encryption script:
 
-Decryption (Retrieving the message from an image): 
+bash
+python encrypt.py
 
-Run decrypt.py:
 
-  python decrypt.py
+3. Enter the **secret message** and **passcode** when prompted.
+4. The output will be saved as `encryptedImage.png`.
 
-Enter the correct passcode to reveal the hidden message.
+---
 
-Deployment on GitHub:
+### 🔓 Decryption (Retrieving the Message)
 
-To upload this project to GitHub:
+1. Run the decryption script:
 
-Initialize a Git repository:
+bash
+python decrypt.py
 
+
+2. Enter the **correct passcode** when prompted.
+3. The **hidden message** will be displayed if the passcode matches.
+
+---
+
+## 🌐 Deployment to GitHub
+
+bash
+# Initialize Git repository
 git init
 
-Add files:
-
+# Add files
 git add .
 
-Commit changes:
-
+# Commit
 git commit -m "Initial commit: Steganography project"
 
-Create a new repository on GitHub and copy the provided remote URL.
+# Add remote (replace with your GitHub URL)
+git remote add origin https://github.com/yourusername/steganography-opencv.git
 
-Link your local repo to GitHub:
+# Push to GitHub
+git push -u origin main
 
-git remote add origin <your-repo-url>
 
-Push your code:
+---
 
-  git push -u origin main
+## ⚠ Notes
 
-Notes:
+* Use **PNG images** to avoid compression artifacts (JPG may corrupt hidden data).
+* Make sure your message is not too large for the image resolution.
+* This project is intended for **educational** and **development** use only.
 
-Use PNG images for best results (JPG compression may alter pixel values).
 
-Ensure the message fits within the image size.
+---
 
-This project is open-source and can be used for learning and development purposes.
+## ⭐ Star the Repo
+
+If you find this useful, feel free to star ⭐ the repository and share!
+
+
+
+---

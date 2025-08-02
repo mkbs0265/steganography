@@ -35,11 +35,11 @@ pip install opencv-python
 ## 📁 File Structure
 
 
-├── encrypt.py              # Script for hiding a message in an image
-├── decrypt.py              # Script for retrieving a message from an image
-├── photo.png               # Sample input image
-├── encryptedImage.png      # Output image with embedded message
-├── README.md               # Project documentation
+├── encrypt.py              
+├── decrypt.py              
+├── photo.png               
+├── encryptedImage.png      
+├── README.md               
 
 
 ---
